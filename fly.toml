@@ -14,6 +14,9 @@ console_command = 'php /var/www/html/artisan tinker'
 
 [env]
   APP_ENV = 'production'
+  APP_URL = 'https://notes-blue-dew-153.fly.dev/'
+  DB_CONNECTION = 'sqlite'
+  DB_DATABASE = '/var/www/html/database/database.sqlite'
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
