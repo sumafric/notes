@@ -1,8 +1,10 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import wireuiConfig from './vendor/wireui/wireui/tailwind.config.js';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+    presets: [wireuiConfig],
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
@@ -20,9 +22,6 @@ export default {
             },
         },
     },
-    presets: [
-        ...
-        require("./vendor/wireui/wireui/tailwind.config.js")
-    ],
+    presets: [wireuiConfig],
     plugins: [forms],
 };
