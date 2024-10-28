@@ -9,13 +9,18 @@ use Illuminate\Database\Eloquent\Model;
 class note extends Model
 {
     use  HasFactory, HasUuids;
+    
     protected $guarded = [
         'id',
+    ];
+
+    protected $casts = [
+        'is_published' => 'boolean'
     ];
 /**
 * Get the user that owns the note.
 */
-public function user()
+    public function user()
     {
         return $this -> belongsTo(User::class);  
     }
