@@ -22,7 +22,7 @@
             <div class="flex flex-col items-center justify-center p-6 mx-auto space-y-4 text-center max-w-7xl lg:p-8">
                 <x-application-logo class="w-24 h-24 fill-current text-primary" />
                 <x-button primary xl href="{{ route('register') }}">Let's Write</x-button>
-            </div>                  
+            </div>
         </div>                  
     </body>
 </html>
