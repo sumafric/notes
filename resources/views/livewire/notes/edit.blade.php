@@ -4,8 +4,7 @@ use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
 use App\Models\Note;
 
-#[Layout('layouts.app')]
-class extends Component {
+new #[Layout('layouts.app')]class extends Component {
 
     public Note $note;
     public $noteTitle;
