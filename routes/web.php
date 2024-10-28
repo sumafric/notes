@@ -14,11 +14,11 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::view('notes', 'notes.index')  //create a notes route to be viewed in index.
+Route::view('notes', 'notes.index')
     ->middleware(['auth'])
     ->name('notes.index');
 
-Route::view('profile', 'notes.create')
+Route::view('notes/create', 'notes.create')
     ->middleware(['auth'])
     ->name('notes.create');
     
