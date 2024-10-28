@@ -23,5 +23,6 @@
                 <x-application-logo class="w-24 h-24 fill-current text-primary" />
                 <x-button primary xl href="{{ route('register') }}">Let's Write</x-button>
             </div>                  
+        </div>                  
     </body>
 </html>
